@@ -30,7 +30,7 @@ const ToursPage = () => {
             disabled={isPending}
             onClick={() => setSearchValue('')}
           >
-            {isPending ? 'please wait' : 'reset'}
+            {isPending ? 'please wait' : 'search'}
           </button>
         </div>
       </form>
