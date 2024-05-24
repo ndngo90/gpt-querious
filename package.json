@@ -4,17 +4,29 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "@clerk/nextjs": "^5.0.12",
+    "@prisma/client": "^5.5.2",
+    "@tanstack/react-query": "^5.8.1",
+    "@tanstack/react-query-devtools": "^5.8.1",
+    "axios": "^1.6.1",
+    "groq-sdk": "^0.3.3",
+    "next": "14.2.3",
+    "openai": "^4.14.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^3.9.4",
     "postcss": "^8",
+    "prisma": "^5.5.2",
     "tailwindcss": "^3.4.1"
   }
 }
